@@ -1,0 +1,9 @@
+body{
+    display: grid;
+    place-items: center;
+    
+}
+
+#divRes{
+    background-color: #ededed;
+}
