@@ -6,15 +6,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Star Ubers</title>
 </head>
-<body >
+<body style="background-color: #ff4a4a;" id="div__body" >
     
     <h1>Star Ubers</h1>
+    <div id="div__main__content">
     <label for="distanciaKm">Distância à percorrer</label>
-    <input  id="distanciaKm" style="margin: 10px; text-align: center;" type="number"  placeholder="digite a distância" >
-    <button onclick="calcularTempo()">Calcular</button>
-    <h1 id="divRes"> 
+    <input  id="distanciaKm" type="number"  placeholder="digite a distância" >
+    <div id="divRes"> 
         
-    </h1>
+    </div>
+    <button class="my__button" onclick="calcularTempo()">Calcular o tempo </button>
+    
+    </div>
+    
     <script src="starUbers.js"></script>
 </body>
 </html>
