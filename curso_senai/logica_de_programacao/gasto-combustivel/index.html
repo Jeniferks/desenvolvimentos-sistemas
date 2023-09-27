@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Gastos Gasolina</title>
 </head>
 <body>
-    <button onclick="gastoGasolina()"></button>
+    <header>Gastos Gasolina</header>
+    <div class="main__content">
+        <label>Distância</label>
+        <input style="text-align: center;" id="inpDistancia" type="number" placeholder="digite a distancia" value="" min="0">
+
+        <label>Consumo</label>
+        <input style="text-align: center;"  id="inpConsumo" type="number" placeholder="digite quanto foi consumido" value="" min="0">
+
+        <label>Preço</label>
+        <input style=" text-align: center; "  id="inpPreco" type="number" placeholder="digite o preço da gasolina" value="" min="0">
+    </div>
+    <button onclick="gastoGasolina()">Calcular</button>
+
+    <p id="resultado">
+        
+    </p>
+
+    <footer style="display: grid; place-items: center; text-align: center;"> <i>Projeto criado por Jenifer Kindermann &trade;</i></footer>
+
+
+    <!-- <button onclick="gastoGasolina()"></button> -->
 </body>
 <script src="gastos.js"></script>
 </html>
+
+<!-- distancia, consumo, preco -->
