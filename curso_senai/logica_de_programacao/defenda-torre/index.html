@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Defenda a Torre</title>
+</head>
+<body>
+    <div class="main__content">
+    <h1>Defenda a Torre</h1>
+    <div class="estrutura__torre">
+        <label>Estrutura da Torre</label>
+        <input id="inputEstrutura" type="number"value=100>
+    </div>
+
+    <div class="destruir__torre">
+        <label>Destruir</label>
+        <input id="inputDestruir" type="number">
+        <button onclick="Destruir()"> - </button>
+    </div>
+
+    <div class="construir__torre">
+        <label>Construir</label>
+        <input id="inputConstruir" type="number">
+        <button onclick="Construir()"> + </button>
+    </div>
+    
+    <div class="situacao__torre">
+        <label>Situação da Torre</label>
+        <input id="inputSituacao" value="Ativa">
+    </div>
+</div>
+
+    <!-- estrutura da torre
+    destruir
+    construir
+    situaçao da torre -->
+
+    
+</body>
+<script src="defendaTorre.js"></script>
+</html>

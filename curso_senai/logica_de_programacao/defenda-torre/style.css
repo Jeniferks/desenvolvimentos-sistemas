@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+input{
+    margin: 5px;
+}
+
+button{
+    width: 30px;
+}
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 250px;
+    padding: 10px;
+    border: 2px solid black;
+    -webkit-box-shadow: 14px 11px 13px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 11px 13px 1px rgba(0,0,0,0.75);
+    box-shadow: 14px 11px 13px 1px rgba(0,0,0,0.75);
+}
