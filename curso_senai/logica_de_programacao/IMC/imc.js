@@ -1,45 +1,43 @@
 // IMC = Peso ÷ (Altura × Altura)
-
+    let peso = document.getElementById("inpPeso")
+    let altura = document.getElementById("inpAltura")
+    let resultadoIMC = document.getElementById("result__imc")
+    let resultado = document.getElementById("inpt__result")
 
 function calculoIMC() {
-    let peso = document.getElementById("inpPeso").value
-    let altura = document.getElementById("inpAltura").value
-    let resultadoIMC = document.getElementById("result__imc")
-    let resultado = document.getElementById("result")
-
-
-    let valorIMC = peso / (altura * altura)
-
-
-    resultadoIMC.innerHTML = `<h3>Seu IMC é ${valorIMC.toFixed(2)}</h3>`
-    resultado.innerHTML= `${resultadoFinal}` 
     
+    // let valorIMC = peso / (altura * altura)
     
+    resultadoIMC.value = (peso.value) / ((altura.value) * (altura.value))
 
+    resultadoIMC.innerHTML = `<h3> IMC: ${(resultadoIMC.value).toFixed(2)}</h3>`
 
-    console.log(resultadoIMC)
+    console.log(resultadoIMC.value)
 
-    function resultadoFinal() {
+    if (resultadoIMC.value < 15) {
 
-        if (valorIMC < 15) {
-            return "muito abaixo do peso"
-    
-        } else if (valorIMC > 15 && valorIMC < 18) {
-            return "Abaixo do peso";
-    
-        } else if (valorIMC > 18 && valorIMC < 25) {
-            return "Peso adequado";
-    
-        } else if (valorIMC > 25 && valorIMC < 28) {
-            return "Acima do peso!";
-            
-        } else {
-            return "Muito acima do peso!!!";
-        }
+        resultado.value = 'Muito abaixo do peso'
+
+    } else if (resultadoIMC.value >= 15 && resultadoIMC.value < 18) {
+        resultado.value =  "Abaixo do peso";
+
+    } else if (resultadoIMC.value > 18 && resultadoIMC.value < 25) {
+        resultado.value =  "Peso adequado";
+
+    } else if (resultadoIMC.value > 25 && resultadoIMC.value < 28) {
+        resultado.value =  "Acima do peso!";
         
-    
+    } else {
+        resultado.value =  "Muito acima do peso!!!";
+    }
 
-    console.log(resultadoFinal)
+    console.log(resultadoIMC.value)
+
 
 }
+
+function Resultado() {
+
+    
+    
 }
