@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin: 25vh;
+}
+
+h1{
+    margin: 10px;
+}
+
+h2{
+    display: flex;
+    flex-direction: row;
+    margin: 10px ;
+}
+
+h2 > input{
+    margin-left: 10px ;
+}
+table{
+    border: 2px solid black;
+}
+
+td{
+    text-align: center;
+    border: 2px solid black;
+    width: 100px;
+    font-weight: bolder;
+}
+
+tr{
+    margin: 10px;
+    background-color: #8080805a;
+    
+}
