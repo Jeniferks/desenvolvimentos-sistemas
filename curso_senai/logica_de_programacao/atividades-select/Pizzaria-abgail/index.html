@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria da Abgail</title>
+</head>
+<body>
+    <header>
+        <h1>Pizzaria da Abgail</h1>
+        <p>Descontos de 15% em valores acima de R$50</p>
+    </header>
+    <div class="main__content">
+    <label style="margin-bottom: 20px; font-weight: bolder; font-size: 20px;"> Escolha sua pizza</label>
+    
+    <select id="optionSelect">
+        <option  value="0"></option>
+        <option value="20">Lombinho</option>
+        <option value="25">Calabresa</option>
+        <option value="28">Portuguesa</option>
+        <option  value="63">Camarão</option>
+    </select>
+
+    <p id="pizzaEscolhida">Nenhuma pizza escolhida!</p>
+
+    <button onclick="comprar()">COMPRAR</button>
+    </div>
+    
+
+    
+</body>
+<script src="pizzaria.js"></script>
+</html>
