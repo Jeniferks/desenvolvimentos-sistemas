@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 150px;
+    color: #ffffff;
+    background-color: #f34c83;
+
+}
+
+header {
+    font-size: 25px;
+}
+label{
+    font-size: 20px;
+}
+
+.resultado__traducao {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    align-items: center;
+
+}
+
+button {
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 11%;
+}
+
+#inputResultado {
+    width: 150px;
+    color: #000000;
+    font-size: 15px;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    background-color:  palevioletred;
+}
+
+
+.menu__opcoes{
+    margin-top: 20px;    
+}
+
+.menu__opcoes > select{
+    background-color:  palevioletred;
+}
+
+
+
