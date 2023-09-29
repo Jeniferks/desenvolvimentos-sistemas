@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Numbers Translation</title>
+</head>
+<body>
+    <header>English Numbers Translation</header>
+
+    <div class="resultado__traducao">
+        <label>Tradução</label>
+        <input id="inputResultado" type="text" placeholder="Resultado">
+        <button onclick="traduzir()">Traduzir</button>
+    </div>
+
+    <p id="labelWarning" style="color: yellow;">Nenhuma opção Escolhida!</p>
+
+    <div class="menu__opcoes">
+
+        <label>Número</label>
+
+        <select id="optionSelect" value="" onclick="selectNumber()">
+            <option value="0"></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+        </select>
+
+    </div>
+    
+</body>
+<script src="numberTranslator.js"></script>
+</html>
