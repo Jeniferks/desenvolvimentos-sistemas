@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>5.25 El Chancho</title>
+    </head>
+<body>
+    <div class="price__content">
+        <h1>El Chancho</h1>
+        <label for="inpPreco">Valor do produto:</label>
+        <input id="inpPreco" type="number" placeholder="digite o valor do produto"/>
+    </div>
+
+    <div class="coin__content">
+        <h2>Quantidade das moedas:</h2>
+        <label for="inp1Real">R$1,00</label>
+        <input id="inp1Real" type="number"placeholder="digite a quantidade de moedas"    />
+
+        <label for="inp50Centavos">R$0,50</label>
+        <input id="inp50Centavos" type="number" placeholder="digite a quantidade de moedas" />
+
+        <label for="inp25Centavos">R$0,25</label>
+        <input id="inp25Centavos" type="number" placeholder="digite a quantidade de moedas"/>
+
+        <label for="inp10Centavos">R$0,10</label>
+        <input id="inp10Centavos" type="number"  placeholder="digite a quantidade de moedas" />
+
+        <label for="inp05Centavos">R$0,05</label>
+        <input id="inp05Centavos" type="number" placeholder="digite a quantidade de moedas"/>
+
+        <button onclick="countCoins()">Calcular</button>
+    </div>
+    <div id="divResultado"> 
+        
+    </div>
+</body>
+<script src="chancho.js"></script>
+</html>
