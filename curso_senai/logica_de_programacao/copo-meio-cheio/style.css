@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+}
+
+body > p{
+    margin: 5px;
+    font-size: large;
+}
+
+input{
+    margin: 10px;
+}
+
+#divResult{
+    margin: 10px;
+}
+
