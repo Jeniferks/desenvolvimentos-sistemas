@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade Quiz</title>
+
+</head>
+<body>
+    <header> Mini Quiz Maneiro</header>
+    <div id="firstQuestion">
+        <p>Qual o País com o maior PIB?</p>
+        <select name="select">
+            <option class="option__style" value=""> EUA </option>
+            <option class="option__style" value=""> China </option>
+            <option class="option__style" value=""> Luxemburgo </option>
+        </select>
+    </div>
+
+    <div id="secondQuestion">
+        <p>Qual País é considerado o país do futebol?</p>
+        <select name="select">
+            <option class="option__style" value=""> EUA </option>
+            <option class="option__style" value=""> Brasil </option>
+            <option class="option__style" value=""> Luxemburgo </option>
+        </select>
+    </div>
+
+    <div id="ThirdQuestion">
+        <p>Quem é a pessoa mais rica do mundo?</p>
+        <select name="select">
+            <option class="option__style" value=""> Elon Musk </option>
+            <option class="option__style" value=""> Jeff Bezos </option>
+            <option class="option__style" value=""> Silvio Santo </option>
+        </select>
+    </div>
+    <div id="radio__boxes">
+        
+        <input type="radio" id="inpAlert" name="inpAlert" value="Alert">
+        <label for="inpAlert">Alert</label>
+
+        <input type="radio" id="inpInput" name="inpInput" value="Alert">
+        <label for="inpInput">Input</label>
+
+        <input type="radio" id="inpdiv" name="inpdiv" value="Alert">
+        <label for="inpdiv">DIV</label>
+    
+    </div>
+
+    <div id="check__box">
+        <input type="checkbox" id="inpCheckbox" name="inpCheckbox" value="Alert">
+        <label for="inpCheckbox">Quero ver meu resultado</label>
+    </div>
+
+    <button onclick="teste()">clique aqui</button>
+</body>
+<script src="quiz.js"></script>
+</html>
