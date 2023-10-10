@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin-top: 25px;
+}
+
+#main__content{
+    margin-top: 50px;
+    padding: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    text-align:center;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+button{
+    margin-top: 25px;
+    margin-left: 56px;
+    width: 50px;
+    
+}
+
+#result{
+    margin-top: 30px;
+}

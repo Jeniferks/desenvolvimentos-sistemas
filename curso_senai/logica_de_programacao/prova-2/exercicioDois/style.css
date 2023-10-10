@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin: 10rem ;
+}
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    display: grid;
+    place-items: left;
+    
+}
+
+button{
+    margin-top: 15px;
+}
