@@ -1,34 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>La Cantineta</title>
 </head>
+
 <body>
     <h1>La Cantineta</h1>
-    <label>Item</label>
+
     <div class="main__content">
-    <select id="optionSelect">
-        <option value="4">Cachorro Quente</option>
-        <option value="4.50">X-Salada</option>
-        <option value="5">X-Bacon</option>
-        <option value="2">Torrada Simples</option>
-        <option value="1.50">Refrigerante</option>
-    </select>
-    <label for="inpQtd">Qtd</label>
-    <input id="inpQtd"type="number" placeholder="Quantidade">
-    <label for="inpPreco">Preço Un.</label>
-    <input id="inpPreco"type="number" placeholder="Preço">
-    <label for="inpTotal">Total</label>
-    <input id="inpTotal"type="number" placeholder="Total">
-    <button onclick="Calcular()">clique aqui</button>
+        <label style="display:flex; margin-top: 10px;">Item</label>
+        <select id="optionSelect">
+
+            <option value="4">Cachorro Quente</option>
+            <option value="4.50">X-Salada</option>
+            <option value="5">X-Bacon</option>
+            <option value="2">Torrada Simples</option>
+            <option value="1.50">Refrigerante</option>
+
+        </select>
+        <div class="inputs">
+        <div >
+            <label for="inpQtd">Qtd</label>
+            <input id="inpQtd" type="number" placeholder="Quantidade">
+        </div>
+        <div>
+            <label for="inpPreco">Preço Un.</label>
+            <input id="inpPreco" type="number" placeholder="Preço">
+        </div>
+        <div>
+            <label for="inpTotal">Total</label>
+            <input id="inpTotal" type="number" placeholder="Total">
+        </div>
+        
     </div>
+    <button onclick="Calcular()">clique aqui</button>
+</div>
 
     <div id="lancheEscolhido">
-        
+
     </div>
 </body>
 <script src="cantineta.js"></script>
+
 </html>
