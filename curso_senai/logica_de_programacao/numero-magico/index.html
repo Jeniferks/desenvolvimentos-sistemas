@@ -10,23 +10,50 @@
 </head>
 
 <body>
+
+    <!-- Página de seleção do tipo do jogo -->
+
     <header>Número mágico</header>
-    <main>
-        <h1>Selecione o modo de Jogo</h1>
-        <div id="select_div">
+    <div id="select_div">
+        <h1 >Selecione o modo de Jogo</h1>
+        <div class="main__btns">
+            
+            <div class="btn__computer__mode">
+                <button id="btnPve" onclick="AiMode()">Player VS AI</button>
+            </div>
+            
             <div class="btn__player__mode">
                 <button id="btnPvp" onclick="playerMode()">Player VS Player</button>
-
             </div>
-            <div class="btn__computer__mode"></div>
-            <button id="btnPve" onclick="AiMode()">Player VS AI</button>
+        </div>
+        </div>
+
+    <!-- Página do jogo     -->
+
+                
+
+                <!-- jogador contra computador -->
+
+        <div id="gamePageAi">
+            <p id="resultado1">
+                <label>Jogue contra o PC e tente adivinhar o número</label>
+                <input id="inpPve" type="number" placeholder="chute aqui">
+                <button type="submit" onclick="AiGameMode()">adivinhar</button>
+            </p>
+        </div>
+        <div id="resultadoFinal1"></div>
+
+        <!-- jogador contra jogador  -->
+        <div id="gamePagePlayer">
+            <div id="resultado2">
+                <label>Jogue contra outro Jogador e ganhe</label>
+                <input id="inpPvp" type="number" placeholder="escreva o numero aqui">
+                <button type="submit" onclick="PlayerGameMode()">adivinhar</button>
+            </div>
 
         </div>
-        </div>
-        <div>
-            <p id="resultado1"></p>
-            <p id="resultado2"></p>
-        </div>
+        <div id="resultadoFinal2"><button id="btn__return"> voltar</button></div> 
+        
     </main>
 
 </body>
