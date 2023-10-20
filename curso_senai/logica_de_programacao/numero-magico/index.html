@@ -4,56 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Número Mágico</title>
 </head>
 
 <body>
+    
 
-    <!-- Página de seleção do tipo do jogo -->
+    <!-- Página inicial do jogo -->
 
-    <header>Número mágico</header>
+    <header style="font-family: Pixelify sans;">Número mágico</header>
     <div id="select_div">
-        <h1 >Selecione o modo de Jogo</h1>
+        <h1>Bora brincar!</h1>
         <div class="main__btns">
-            
+
             <div class="btn__computer__mode">
-                <button id="btnPve" onclick="AiMode()">Player VS AI</button>
+                <button id="btnPve" onclick="AiMode()">Entrar no Jogo</button>
             </div>
+
+        </div>
+    </div>
+
+   
+    <!-- Área de jogo -->
+
+    <div id="gamePageAi">
+        <p id="resultado1">
+            <!-- <label>Jogue contra o PC e tente adivinhar o número</label>
+            <input id="inpPve" type="number" placeholder="chute aqui">
+            <button type="submit" onclick="AiGameMode()">adivinhar</button> -->
             
-            <div class="btn__player__mode">
-                <button id="btnPvp" onclick="playerMode()">Player VS Player</button>
-            </div>
-        </div>
-        </div>
+            <!-- area de definições do jogo -->
 
-    <!-- Página do jogo     -->
+            <div id="game__def" >
+                <label >Definições</label>
+                <div id="definitions">
+                   <label>De</label> 
+                   <input style="width:30px;" id="inpMin" type="number" value="0"> 
+                   <label >A</label>  
+                   <input type="number" value="100" id="inpMax"></p>
+                </div>
 
-                
-
-                <!-- jogador contra computador -->
-
-        <div id="gamePageAi">
-            <p id="resultado1">
-                <label>Jogue contra o PC e tente adivinhar o número</label>
-                <input id="inpPve" type="number" placeholder="chute aqui">
-                <button type="submit" onclick="AiGameMode()">adivinhar</button>
-            </p>
-        </div>
-        <div id="resultadoFinal1"></div>
-
-        <!-- jogador contra jogador  -->
-        <div id="gamePagePlayer">
-            <div id="resultado2">
-                <label>Jogue contra outro Jogador e ganhe</label>
-                <input id="inpPvp" type="number" placeholder="escreva o numero aqui">
-                <button type="submit" onclick="PlayerGameMode()">adivinhar</button>
+                <div id="attempts">
+                <label>Max tentativas</label>
+                <input id= "inpTentativas" type="number" value="20">
+                </div>
             </div>
 
-        </div>
-        <div id="resultadoFinal2"><button id="btn__return"> voltar</button></div> 
-        
+            <!-- Área de jogo -->
+            <div id="game__area" >
+                <p>Jogar</p>
+                <div id="play__area">
+                    <label>Seu Palpite</label>
+                    <input type="number" id="inpPalpite">
+                    <button>confirmar</button>
+                    <br>
+                    <label>Tentativas restantes</label>
+                    <input type="number" id="inpRestante">
+                </div>
+            <div id="game__btns">
+                <button>Iniciar</button>
+                <button>Desistir</button>
+            </div>
+            <label id="msgJogador">Frase de efeito!</label>
+            </div>
+
+            <!-- Área de pontuação -->
+            <div id="game__score">
+                <div id="score__area">
+                <p>Placar/Dicas</p>
+                <label>Pontuação</label>
+                <input type="number" value="0" id="inpPontos">
+                <label>Dica Número</label>
+                <input id="inpDicas" type="text" value="o numero é maior" style="text-align:center; width: fit-content;">    
+                </div>
+            </div>
+        </p>
+    </div>
+    <div id="resultadoFinal1"></div>
+
+   
+
     </main>
 
 </body>
