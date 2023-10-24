@@ -44,15 +44,16 @@
                 <label >Definições</label>
                 <div id="definitions">
                    <label>De</label> 
-                   <input style="width:30px;" id="inpMin" type="number" value="0"> 
+                   <input style="width:30px;" id="inpMin" type="number" > 
                    <label >A</label>  
-                   <input type="number" value="100" id="inpMax"></p>
+                   <input type="number" id="inpMax"></p>
                 </div>
 
                 <div id="attempts">
                 <label>Max tentativas</label>
-                <input id= "inpTentativas" type="number" value="20">
+                <input id= "inpTentativas" type="number" >
                 </div>
+                <button id="guess__btn"  onclick="AiGameMode()">Iniciar</button>
             </div>
 
             <!-- Área de jogo -->
@@ -61,16 +62,16 @@
                 <div id="play__area">
                     <label>Seu Palpite</label>
                     <input type="number" id="inpPalpite">
-                    <button>confirmar</button>
+                    <button onclick="userGuess()">confirmar</button>
                     <br>
                     <label>Tentativas restantes</label>
                     <input type="number" id="inpRestante">
                 </div>
             <div id="game__btns">
-                <button>Iniciar</button>
-                <button>Desistir</button>
+                
+                <button id="quit__btn" onclick="quitGame()">Desistir</button>
             </div>
-            <label id="msgJogador">Frase de efeito!</label>
+            <label id="msgJogador"></label>
             </div>
 
             <!-- Área de pontuação -->
@@ -78,9 +79,9 @@
                 <div id="score__area">
                 <p>Placar/Dicas</p>
                 <label>Pontuação</label>
-                <input type="number" value="0" id="inpPontos">
+                <input type="number" id="inpPontos">
                 <label>Dica Número</label>
-                <input id="inpDicas" type="text" value="o numero é maior" style="text-align:center; width: fit-content;">    
+                <input id="inpDicas" type="text" style="text-align:center; width: fit-content;">    
                 </div>
             </div>
         </p>
