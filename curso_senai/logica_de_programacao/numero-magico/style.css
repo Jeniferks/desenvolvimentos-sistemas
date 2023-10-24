@@ -8,6 +8,7 @@ body{
 header{
     display: grid;
     place-items: center;
+    height: 20vh;
     margin-top: 2em;
     margin-bottom: 1em;
     font-size: 30px;
@@ -40,6 +41,7 @@ h1, h2{
 
 p, label{
     color: white;
+    
 }
 
 button{
@@ -49,6 +51,13 @@ button{
     color: black;
     font-weight: bolder;
     cursor: pointer;
+    
+    transition: width 2s;
+}
+
+button:hover{
+    background: palevioletred;
+    
 }
 
 .main__btns{
@@ -78,31 +87,25 @@ input{
 
 input, label{
     
-    margin: 8px;
+    margin: auto;
     width: 50px;
 }
 
 #game__def, #game__area, #game__score{
-    /* display: flex;
-    flex-direction: column; */
+    
     margin: 5px;
     padding: 10px;
+    padding-top: 15px;
     width: 400px;
     border: 2px black solid;
     text-align: center;
     justify-content: center;
-    align-content: center;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-#game__def{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 #definitions{
     display: flex;
@@ -128,6 +131,12 @@ input, label{
     align-items: center;
 }
 
-
+@media screen and (max-width: 800px) {
+    .gamePageAi {
+      flex-wrap: wrap;
+        flex-flow: column;
+    }
+    
+  }
 
 

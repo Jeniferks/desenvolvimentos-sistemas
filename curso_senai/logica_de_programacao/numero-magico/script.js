@@ -36,7 +36,11 @@ function AiGameMode(){
     numeroSecreto = (Math.floor(Math.random() * Number(elementoinpMax.value) - Number(elementoinpMin.value) +1) + Number(elementoinpMin.value))
     elementoinpRestante.value = elementoinpTentativas.value
     console.log(numeroSecreto)
+    elementoinpMin.value = "";
+    elementoinpMax.value = "";
+    elementoinpTentativas.value = "";
     startButton.disabled = true
+    quitBtn.disabled = false
     
 
     
@@ -53,6 +57,7 @@ function userGuess(){
     
             
         }else if(elementoinpPalpite.value > numeroSecreto){
+            elementoinpPalpite.value = ""
             elementoinpRestante.value = elementoinpRestante.value - 1
             elementoinpPontos.value = elementoinpPontos.value - 10
             elementoinpDicas.value = elementoinpDicas.innerHTML = 'Seu chute foi maior'
@@ -60,6 +65,7 @@ function userGuess(){
     
             
         }else{
+            elementoinpPalpite.value = ""
             elementoinpRestante.value = elementoinpRestante.value - 1
             elementoinpPontos.value = elementoinpPontos.value - 10
             elementoinpDicas.value = elementoinpDicas.innerHTML = 'Seu chute foi menor'
@@ -67,7 +73,7 @@ function userGuess(){
     
         }
     }else{
-        elementoInpMsg.value = elementoInpMsg.innerHTML = "<h3>Já era, perdeu playboy</h3>"
+        elementoInpMsg.value = elementoInpMsg.innerHTML = "<h2>Já era, perdeu playboy</h2>"
         startButton.disabled = false
         startButton.disabled = false
         quitBtn.disabled = false
