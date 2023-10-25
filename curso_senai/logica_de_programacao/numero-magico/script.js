@@ -86,7 +86,7 @@ function userGuess(){
         swal({
             title: "Que pena!",
             text: "Você perdeu o jogo!",
-            icon: "success",
+            icon: "error",
             button: "AAAARRGH!",
           });
     }
