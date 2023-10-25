@@ -54,6 +54,12 @@ function userGuess(){
             elementoinpDicas.value = elementoinpDicas.innerHTML = 'Você acertou'
             elementoinpPontos.value = Number(elementoinpPontos.value) + 10
             elementoInpMsg.value = elementoInpMsg.innerHTML = '<h2>Arrasou!Você Ganhou o jogo</h1>'
+            swal({
+                title: "Parabéns!",
+                text: "Você ganhou o jogo!",
+                icon: "success",
+                button: "UHUUUL!",
+              });
     
             
         }else if(elementoinpPalpite.value > numeroSecreto){
@@ -77,6 +83,12 @@ function userGuess(){
         startButton.disabled = false
         startButton.disabled = false
         quitBtn.disabled = false
+        swal({
+            title: "Que pena!",
+            text: "Você perdeu o jogo!",
+            icon: "success",
+            button: "AAAARRGH!",
+          });
     }
 
 }
@@ -102,3 +114,4 @@ function quitGame(){
     }
 }
 
+//SHOW MODAL
