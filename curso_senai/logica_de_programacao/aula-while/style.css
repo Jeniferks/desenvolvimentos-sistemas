@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:grid;
+    place-items: center;
+}
+
+.main__content{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 40px;
+    padding: 30px;
+}
+
+#divResultado, #divResultadoDois{
+    width: 50px;
+    text-align: center;
+}
