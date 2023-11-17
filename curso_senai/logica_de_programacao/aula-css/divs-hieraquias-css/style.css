@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#main__container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+}
+
+#topo{
+    height:30%;
+    background-color: blue;
+}
+
+#baixo{
+    height:70%;
+    
+}
+
+#baixo-esquerda{
+    background-color: pink;
+    width: 15%;
+}
+
+#baixo-centro{
+    background-color: purple;
+    width: 65%;
+}
+
+#baixo-direita{
+    background-color: orange;
+    width: 20%;
+}
