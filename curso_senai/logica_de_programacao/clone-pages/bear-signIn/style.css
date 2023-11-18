@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#main__container{
+    height: 100%;
+    display: flex;
+    
+
+}
+
+#left__container{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+
+#login__div{
+    width: 500px;
+    height: 29.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    
+    
+}
+
+
+img{
+    width: 100px;
+    
+    
+}
+
+#login__div > h1{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#login__div > p{
+    font-size: 15px;
+}
+
+#info__div{
+    width: 350px;
+    height: 30.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* border: 2px solid black; */
+    
+}
+
+input{
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.404);
+    
+}
+
+#info__div > label{
+    margin-top: 20px;
+    
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    
+}
+
+.checkbox > label {
+    margin-left: 10px;
+    
+}
+
+/*--------BOTTOM LEFT CONTAINER----------*/
+#button__div{
+    width: 500px;
+    height: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    
+}
+#button__div > button{
+    width: 350px;
+    height: 35px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    color: #ffffff;
+    border: none;   
+}
+
+.span__password{
+    text-decoration: underline;
+    font-size: 12px;
+    color: #0000008b;
+    cursor: pointer;
+    
+}
+
+.span__policy{
+    margin-top: 2px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+/* --------RIGHT CONTAINER ---------*/
+
+#right__container{
+    height: 100%;
+    width: 60%;
+    background-image: url(fundobear.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+#intro__content{
+    width: 22%;
+    height: 70%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: left;
+    filter: drop-shadow( -10px 10px 23px black);
+    position: fixed;
+    padding: 30px;
+    
+}
+
+#intro__content > h1{
+    font-size: 20px;
+    font-weight:400;
+    position: relative;
+}
+
+#intro__content > p {
+    text-align:justify;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.618);
+    position: relative;
+}
+
+#intro__content > button {
+    
+    width: 219px;
+    height: 45px;
+    padding-left: 10px;
+    text-align: left;
+    background-color: orangered;
+    
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
