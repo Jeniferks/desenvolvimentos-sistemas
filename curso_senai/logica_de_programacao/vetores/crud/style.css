@@ -1,0 +1,32 @@
+body{ 
+    display: grid;
+    place-items: center;
+}
+
+#tudo{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    margin: 2px;
+    width: 75px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+#options{
+    margin: 15px;
+}
+
+#username{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 105px;
+    align-items: center;
+    justify-content: center;
+}
