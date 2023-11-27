@@ -1,12 +1,15 @@
+let inpDono = document.getElementById("inputDono")
 let inpPet = document.getElementById("inputPet");
 let inpIdade = document.getElementById("inputIdade")
 
 let resultado = document.getElementById("result")
 let inpPesquisa = document.getElementById("inputPesquisa")
+
 let pets = []
+let posSearch = "";
 
 function cadastrar() {
-    let pet = `Nome: ${inpPet.value}, Idade: ${inpIdade.value} <br>`;
+    let pet = `Dono: ${inpDono.value} Nome: ${inpPet.value} Idade: ${inpIdade.value} `;
 
     pets.push(pet)
     inpPet.value = ''
@@ -17,13 +20,29 @@ function cadastrar() {
 
 function pesquisar(){
     let petSearch = inpPesquisa.value
-    for(i = 0; i < pets.length; i++){
-        console.log(pets[i])
-        if(petSearch == pets[i]){
-            alert(`Achei: ${pets[i]}`)
-            break
+    
+    posSearch = pets.indexOf(petSearch)
+    
+        if(petSearch == posSearch){
+            alert(`Achei: ${pets}`)
+            
         }else{
             alert("Nome não consta")
         }
-    }
+}
+
+function deletar(){
+
+}
+
+function editar(){
+
+}
+
+function excluir(){
+
+}
+
+function listar(){
+
 }
