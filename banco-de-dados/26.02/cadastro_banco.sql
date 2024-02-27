@@ -32,5 +32,19 @@ id_tipo INT NOT NULL AUTO_INCREMENT,
 nome VARCHAR(100),
 PRIMARY KEY (id_tipo)
 );
+-- 27.02 --
+-- inserindo valores na coluna --
+
+INSERT INTO cliente 
+(nome)
+VALUES
+('Jenifer'),
+('Akin');
+
+-- para verificar os valores inseridos --
+
+SELECT * FROM cliente;
+
+SELECT nome FROM cliente;
 
 
