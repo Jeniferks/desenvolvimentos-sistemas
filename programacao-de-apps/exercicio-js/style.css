@@ -1,0 +1,12 @@
+body{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    flex-direction: column;
+    justify-content: left;
+}
+
+button{
+    margin: 10px;
+}
