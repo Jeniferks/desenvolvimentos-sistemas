@@ -7,8 +7,8 @@ subtração, multiplicação e divisão desses números no console, exemplo:*/
 // “A / B = 2”
 
 function exercicioDois() {
-    let primeiroNumero = prompt("Insira o primeiro número");
-    let segundoNumero = prompt("Insira o primeiro número");
+    let primeiroNumero = Number(prompt("Insira o primeiro número"));
+    let segundoNumero = Number(prompt("Insira o primeiro número"));
 
     let soma = primeiroNumero + segundoNumero;
     let subtracao = primeiroNumero - segundoNumero;

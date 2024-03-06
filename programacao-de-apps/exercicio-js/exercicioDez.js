@@ -3,5 +3,13 @@
 Exemplo de resultado: “A string ‘aplicativos’ é grande.”*/
 
 function exercicioDez(){
-    
+    let argumentStr = prompt("Digite uma palavra qualquer")
+
+    if (argumentStr.length > 5){
+        console.log(`A string ${argumentStr} é grande`)
+    }else{
+        console.log(`A string ${argumentStr} é pequena`)
+    }
+
+
 }

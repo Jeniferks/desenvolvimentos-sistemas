@@ -1,6 +1,1 @@
 
-
-function variaveis(){
-    alert("Funcionou")
-}
-
