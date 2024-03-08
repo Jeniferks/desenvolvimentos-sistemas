@@ -1,0 +1,22 @@
+#root{
+  display: grid;
+}
+
+header {
+  background-color: brown;
+  
+}
+
+aside {
+  background-color: blueviolet;
+  
+}
+
+main{
+  background-color: aqua;
+  
+}
+
+footer{
+  background-color: yellow;
+}
