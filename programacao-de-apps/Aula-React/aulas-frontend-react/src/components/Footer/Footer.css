@@ -1,0 +1,7 @@
+footer {
+    background-color: blueviolet;
+    grid-area: rodape;
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem;
+}

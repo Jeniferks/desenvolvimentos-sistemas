@@ -1,0 +1,8 @@
+
+main {
+    background-color: red;
+    grid-area: principal;
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem;
+}
