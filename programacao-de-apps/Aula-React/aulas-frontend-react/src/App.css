@@ -6,7 +6,7 @@
     'ladoEsquerdo principal'
     'rodape rodape';
 
-    grid-template-rows: 64px 1fr 88px;
+    grid-template-rows: 63px 1fr 88px;
     grid-template-columns: 288px 1fr;
     font-size: 20px;
 }

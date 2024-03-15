@@ -4,8 +4,9 @@ const Footer = () => {
     let date =new Date().getFullYear()
     return (
         <footer>
-            copyright &copy; {date} - Todos os direitos reservados - Jenifer Kindermann 
-            
+            <span className="texto-copyright">
+                copyright &copy; {date} - Todos os direitos reservados - Jenifer Kindermann 
+            </span>
         </footer>
     )
 }

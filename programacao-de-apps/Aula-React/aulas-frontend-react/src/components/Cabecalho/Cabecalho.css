@@ -1,8 +1,9 @@
 
 header {
-    background-color: aqua;
+    background-color: var(--cor-primaria);
     grid-area: cabecalho;
-    text-align: center;
-    color: #ffffff;
-    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;    
 }

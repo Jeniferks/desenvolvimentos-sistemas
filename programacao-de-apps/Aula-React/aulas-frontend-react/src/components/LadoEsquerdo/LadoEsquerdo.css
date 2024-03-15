@@ -1,7 +1,6 @@
 aside {
-    background-color: rgb(91, 238, 98);
+    background-color: var(--cor-primaria-clara);
     grid-area: ladoEsquerdo;
-    text-align: center;
     color: #ffffff;
     padding: 1rem;
 }

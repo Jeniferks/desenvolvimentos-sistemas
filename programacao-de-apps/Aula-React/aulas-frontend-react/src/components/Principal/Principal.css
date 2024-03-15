@@ -1,8 +1,8 @@
 
 main {
-    background-color: red;
+    background-color: var(--cor-fundo-padrao);
     grid-area: principal;
     text-align: center;
-    color: #ffffff;
+    
     padding: 1rem;
 }

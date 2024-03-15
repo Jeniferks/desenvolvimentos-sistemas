@@ -1,8 +1,11 @@
 import "./Principal.css"
+import BotaoCustomizado from "../BotaoCustomizado/BotaoCustomizado"
 
 const Principal = () => {
   return (
-    <main>Principal</main>
+    <main>
+      <BotaoCustomizado/>
+    </main>
   )
 }
 

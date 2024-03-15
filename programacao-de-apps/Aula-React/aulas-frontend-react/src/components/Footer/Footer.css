@@ -1,7 +1,11 @@
 footer {
-    background-color: blueviolet;
+    background-color: var(--cor-fundo-padrao);
     grid-area: rodape;
     text-align: center;
-    color: #ffffff;
     padding: 1rem;
+    
+}
+
+.texto-copyright{
+    color: var(--cor-texto-padrao);
 }
