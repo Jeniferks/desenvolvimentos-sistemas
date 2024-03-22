@@ -1,0 +1,5 @@
+.ola__mundo{
+    background-color: var(--cor-primeiro-exercicio);
+    color: var(--cor-texto-primeiro-exercicio);
+    font-weight: bolder;
+}
