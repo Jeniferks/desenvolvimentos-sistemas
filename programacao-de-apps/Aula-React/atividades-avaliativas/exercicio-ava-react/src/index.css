@@ -1,0 +1,13 @@
+:root {
+  margin: 0;
+  padding: 0;
+
+  --cor-primeiro-exercicio: red;
+  --cor-texto-primeiro-exercicio: navy;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
