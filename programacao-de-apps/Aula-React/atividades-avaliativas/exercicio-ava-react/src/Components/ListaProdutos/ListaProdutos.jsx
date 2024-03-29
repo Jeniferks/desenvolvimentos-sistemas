@@ -1,8 +1,11 @@
 
 
-const ListaProdutos = () => {
+const ListaProdutos = (props) => {
+  let item = props.item
   return (
-    <div>ListaProdutos</div>
+    <div>
+      {item}
+    </div>
   )
 }
 

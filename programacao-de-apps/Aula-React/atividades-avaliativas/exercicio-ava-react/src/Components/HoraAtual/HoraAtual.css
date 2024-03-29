@@ -1,0 +1,11 @@
+.hora__atual{
+    border-radius: 50%;
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    margin-left: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow
+}

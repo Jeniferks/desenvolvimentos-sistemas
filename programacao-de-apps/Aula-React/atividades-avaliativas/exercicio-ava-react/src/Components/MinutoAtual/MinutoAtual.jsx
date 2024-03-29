@@ -1,8 +1,12 @@
-
+import "./MinutoAtual.css"
 
 const MinutoAtual = () => {
+    let minutes = new Date().getMinutes()
+
     return (
-        <div>MinutoAtual</div>
+        <div className="minuto__Atual">
+            {minutes}
+        </div>
     )
 }
 

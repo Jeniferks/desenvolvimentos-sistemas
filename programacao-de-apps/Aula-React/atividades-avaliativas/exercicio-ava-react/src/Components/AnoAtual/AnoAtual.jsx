@@ -1,8 +1,11 @@
 import "./AnoAtual.css"
 
 const AnoAtual = () => {
+    let year = new Date().getFullYear()
     return (
-        <div className="ano__atual">AnoAtual</div>
+        <div className="ano__atual">
+            {year}
+        </div>
     )
 }
 
