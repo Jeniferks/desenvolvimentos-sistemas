@@ -1,7 +1,12 @@
+import "./MesAtual.css"
 
 const MesAtual = () => {
+  let month =new Date().getMonth()
   return (
-    <div>MesAtual</div>
+    
+    <div className="mes__atual">
+      {month}
+    </div>
   )
 }
 

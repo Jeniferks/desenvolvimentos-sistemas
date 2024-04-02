@@ -1,3 +1,7 @@
 .ano__atual{
-    background-color: red;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
 }
