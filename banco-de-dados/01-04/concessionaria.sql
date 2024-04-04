@@ -106,16 +106,28 @@ SELECT * FROM veiculo
 RIGHT JOIN cliente
 ON veiculo.cliente_id = cliente.id_cliente;
 
-SELECT * FROM veiculo
+-- Realize um INNER JOIN entre as tabelas veiculo e cliente, é para aparecer nas colunas da consultas as
+-- seguintes descrições: (id_veiculo, placa_registrada, cor, nome_do_cliente
+
+SELECT veiculo.id_veiculo, veiculo.placa, veiculo.cor, veiculo.cliente_id, nome_cliente, data_nascimento FROM veiculo
 INNER JOIN cliente
 ON veiculo.cliente_id = cliente.id_cliente;
 
 CREATE VIEW vw_veiculo_cliente AS
-SELECT veiculo.cliente_id, cliente.id_cliente FROM veiculo
-JOIN cliente
+SELECT veiculo.id_veiculo, veiculo.placa, veiculo.cor, veiculo.cliente_id, nome_cliente, data_nascimento FROM veiculo
+INNER JOIN cliente
 ON veiculo.cliente_id = cliente.id_cliente;
 
+
+
 SELECT * FROM vw_veiculo_cliente;
+
+SELECT nome_cliente, placa FROM vw_veiculo_cliente;
+
+SELECT nome_cliente, data_nascimento FROM vw_veiculo_cliente WHERE placa = "AAA-2320";
+
+SELECT placa, cor FROM vw_veiculo_cliente WHERE id_estacionamento = "1";
+
 
 
 
