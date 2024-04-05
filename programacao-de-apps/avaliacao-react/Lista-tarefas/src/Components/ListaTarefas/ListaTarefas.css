@@ -1,0 +1,31 @@
+button{
+    margin-left:10px ;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+
+button:hover{
+    font-size: 15px;
+}
+
+.btn__add {
+    background-color: rgba(0, 128, 0, 0.438);
+}
+
+.btn__rmv{
+    background-color: rgba(255, 0, 0, 0.623);
+}
+.lista__tarefas{
+    display: flex;
+    flex-direction: column;
+    /* align-items:center; */
+    justify-items: left;
+}
+
+.tarefas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+    
+}
+
