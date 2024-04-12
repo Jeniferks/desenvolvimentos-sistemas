@@ -1,32 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import React from 'react';
+import BotaoCustomizado from './comum/componentes/BotaoCustomizado/BotaoCustomizado';
+import CORES from "./comum/componentes/constantes/cores"
 
 const styles = StyleSheet.create({
   tudo: {
     flex: 1, 
-    backgroundColor: 'red',
+    backgroundColor: CORES.FUNDO_PADRAO,
     alignItems: 'center',
     justifyContent: 'center',
-    flexDirection:"row"
+    flexDirection:"row",
   },
   contador: {
-    fontSize:72,
-    color:'#fff',
+    fontSize:50,
+    color: CORES.PRIMARIA,
   },
-  botao: {
-    backgroundColor: "white",
-    width:24,
-    height:24,
-    alignItems:"center",
-    justifyContent:"center",
-    margin:10,
-  },
-  botaoTexto: {
-    fontSize:40,
-    color: "yellow",
-    
-  },
+  
+
 });
 
 export default function App() {
@@ -34,13 +25,18 @@ export default function App() {
 
   return (
     <View style={styles.tudo}>
-      <TouchableOpacity style={styles.botao} onPress={()=> setContador(contador-1)}>
-        <Text>-</Text>
-        </TouchableOpacity>
+      
+      
+      <BotaoCustomizado cor="primaria" onPress={()=> setContador(contador-1)}>
+        -
+      </BotaoCustomizado>
+
       <Text style={styles.contador}>{contador}</Text>
-      <TouchableOpacity style={styles.botao} onPress={()=> setContador(contador+1)}>
-        <Text>+</Text>
-      </TouchableOpacity >
+
+      <BotaoCustomizado cor="secundaria" style={styles.botao} onPress={()=> setContador(contador+1)}>
+        +
+      </BotaoCustomizado >
+
       <StatusBar style="auto" />
     </View>
   );
